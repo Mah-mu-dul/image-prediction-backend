@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Load the YOLOv8 model
-model = YOLO("../api/model.pt")
+model = YOLO("./model.pt")
 
 # List of class names (replace with your actual class names)
 CLASS_NAMES = {
